@@ -1,4 +1,4 @@
-# Group-4-ISTE240
+# ISTE 240 Group Project
 
 Project: ISTE 240 Group Project Repository
 
