@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/css/zest.css">
+<style>
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#news">About</a>
+    
+  <div class="dropdown">
+    <button class="dropbtn">How-To 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Installations</a>
+      <a href="#">Flavors</a>
+      <a href="#">Linux Commands</a>
+      <a href="#news">About</a>
+    </div>
+     
+  </div> 
+    
+    <a href="#news">Personas</a>
+    <a href="#news">References</a>
+    <a href="#news">About</a>
+    <a href="#news">About</a>
+</div>
+
+<h1>About</h1>
+    <img class="linus" src="assets/images/linus.png" title= "Founder" >
+     <img class="linus2" src="assets/images/linus2.png" title= "Founder" >
+<article>
+    <h2>History of Linux</h2>
+<p>The Linux Kernel, the foundational software that was the basis of all future Linux operating systems, was first released publicly in 1991 by Finnish computer science student Linus Torvalds. Torvalds created the Linux Kernel after having garnered an interest in operating systems as a student at the University of Helsinki. Linux was based upon the MINIX operating system, an educational OS which was created to teach students about the principles of operating systems and their functionality, uses, and importance. Having liked the method in which MINIX was able to teach students how these principles worked, Torvalds wanted to create an operating system based on MINIX that could be used for the average person. The result was the Linux Kernel, a modular piece of software that worked as a hardware level platform for whatever other software was to be added to the machine. Now, instead of having to integrate every program one had with whatever hardware was being used, one could create software that could run on top of Linux, removing the need for applications to become 100% optimized for the hardware, all while remaining open source. This was revolutionary at the time. Linux became the first widely used open source operating system ever made, and still is even today. Because of its open source nature, anybody could take the modular system of the Linux Kernel and develop their own operating system using it. This has led to a modern technological revolution in home, industry, and global computing. Now, nearly 67% of all web servers use a Linux based operating system, and Linux has become the third most popular desktop operating system in the world.
+</p>
+</article>
+</body>
+</html>
