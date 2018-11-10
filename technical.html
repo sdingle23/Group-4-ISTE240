@@ -1,37 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="assets/css/zest.css">
-<title>About Technical Aspects </title>
+    <meta charset="utf-8">
+    <title>Linux Applications</title>
+    <link rel="stylesheet" href="assets/css/zest.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,900" rel="stylesheet">
+    <script src="../assets/js/menuhider.js"></script> 
+    <script>
+        window.onscroll = function(){
+            console.log("send help");
+            var count = 300;
+            var main = document.getElementById('main');
+            var x = main.scrollTop;
+            console.log(x);
+            if (count < x) {
+                    document.getElementById(mainText).style.color="blue";
+                    console.log("Does this if work");
+            }
+        }
+        
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("quickTop").style.display = "block";
+                document.getElementById("head").style.display = "none";
+            } 
+            else {
+                document.getElementById("quickTop").style.display = "none";
+                document.getElementById("head").style.display = "block";
+            }
+        }
+    
+    </script>
 </head>
 <body>
-<div class="navbar">
-  <a href="#home">Home</a>
-  <a href="#news">About</a>
-    
-  <div class="dropdown">
-    <button class="dropbtn">How-To 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="#">Installations</a>
-      <a href="#">Flavors</a>
-      <a href="#">Linux Commands</a>
-      <a href="#news">About</a>
-    </div>
-     
-  </div> 
-    
-    <a href="#news">Personas</a>
-    <a href="#news">References</a>
-    <a href="#news">About</a>
-    <a href="#news">About</a>
-</div>
-<h1>Technical Aspects</h1>
-<div>
-<h2></h2>
-</div>
+    <div id="top"></div>
+    <header id="stick">
+        <div id="head">
+            <div id="headColor">
+            </div><!-- End of< div for the headColor -->
+            <div id="headContent">
+                <img src=logo2.png alt="logo" id="logo">
+                <div id="navBar" class="topnav">
+                    
+                    <ul>
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#">How To</a></li>                        
+                        <li><a href="#">Fun With Linux</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuHider()">&#9776;</a></li>
+                    </ul>   
+                </div><!-- End of div for the navigation bar -->
+            </div><!-- End of div for the headContent -->
+        </div><!-- End of div for the head -->       
+    </header><!-- End of Header -->
+ 
     <h2>Installing New Applications:</h2>
     <p>
           There are many ways to install new applications on to Linux machines. Depending on which distribution is being used, there are several different methods of installing new applications onto your Linux machine. Whether through a package installation apps, or directly through the command line, installing new software on Linux is easy!
@@ -45,13 +69,6 @@
     <p>As Arch Linux is generally designed for use by far more advanced Linux users, generally speaking, installing new software onto Arch systems requires installation through the command line tool “pacman”.
 
 </p>
-    <footer>         
-    <a href="http://validator.w3.org/check?uri=http://people.rit.edu/~sd7015/iste240/exercise2.html">
-<img src="assets/images/html_5_logo_transparent.gif" width="45" height="59"
-alt="HTML5" title="HTML5"></a> ;       
- <a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fpeople.rit.edu%2F%7Esd7015&profile=css3&usermedium=all&warning=1&vextwarning=">
- <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" title="Valid CSS"></a>            
-    Last Modified: Friday, October 19, 2018 5:45PM.
-</footer><!--end of  footer-->
+
 </body>
 </html>
